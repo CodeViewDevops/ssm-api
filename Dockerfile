@@ -8,9 +8,6 @@ COPY . /app
 
 WORKDIR /app
 
-RUN chmod +x /app/build.sh && \
-     sh /app/build.sh
-
 RUN  pip install -r /app/requirements.txt
 
 CMD [ "python", "handler.py" ]
