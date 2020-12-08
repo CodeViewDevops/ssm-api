@@ -5,9 +5,7 @@ ARG AWS_SECRET_KEY
 ARG AWS_REGION
 
 COPY . /app
-
 WORKDIR /app
-
 RUN  pip install -r /app/requirements.txt
 
 CMD [ "python", "handler.py" ]
